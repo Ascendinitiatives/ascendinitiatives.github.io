@@ -3,178 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ascend Initiatives - Coming Soon</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            line-height: 1.4;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .poster-container {
-            max-width: 900px;
-            width: 100%;
-            background: white;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-            border-radius: 16px;
-            overflow: hidden;
-            text-align: center;
-            padding: 2.5rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .poster-header {
-            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-        
-        .poster-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.15"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-        }
-        
-        .poster-title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .poster-subtitle {
-            font-size: 1.2rem;
-            font-weight: 300;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .coming-soon-text {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1e40af;
-            margin-bottom: 1.5rem;
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        
-        .contact-item {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 0.75rem 1.5rem;
-            border-radius: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .contact-item:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-        }
-        
-        @media (max-width: 640px) {
-            .poster-container {
-                padding: 1.5rem;
-                border-radius: 12px;
-            }
-            
-            .poster-title {
-                font-size: 2rem;
-            }
-            
-            .poster-subtitle {
-                font-size: 1rem;
-            }
-            
-            .coming-soon-text {
-                font-size: 1.2rem;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 0.75rem;
-            }
-            
-            .contact-item {
-                width: 100%;
-                text-align: center;
-            }
-        }
-        
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .poster-container {
-                transform: scale(1);
-                box-shadow: none;
-                border-radius: 0;
-            }
-        }
-    </style>
+    <title>Ascend Initiatives - Educational Excellence in Technology & Arts</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="poster-container">
-        <!-- Header Section -->
-        <div class="poster-header">
-            <h1 class="poster-title">ASCEND INITIATIVES</h1>
-            <div class="poster-subtitle">Empowering tomorrow, now</div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="logo">ASCEND INITIATIVES</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <h1>ASCEND INITIATIVES</h1>
+            <p>Empower Tomorrow, Now</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
         </div>
-        
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="coming-soon-text">Coming Soon</div>
-            <p class="text-lg text-gray-600 mb-4">We are working hard to bring you an innovative educational experience. Stay tuned!</p>
-            
-            <!-- Contact Section -->
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope mr-2"></i>
-                    ascendinitiatives@gmail.com
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About Ascend Initiatives</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>Ascend Initiatives is an educational services company specializing in cutting-edge technology education and creative arts. We are dedicated to transforming the educational landscape through innovative programs in Robotics, Artificial Intelligence, Cyber Security, and Creative Arts including Handwriting, Calligraphy, and Cartooning.</p>
+                    <br>
+                    <p>Our comprehensive approach combines theoretical knowledge with practical application, ensuring students and educators receive world-class training that prepares them for the future. We serve schools, institutions, and corporate clients with customized solutions that meet their specific needs.</p>
+                    <br>
+                    <p>With our team of expert trainers and state-of-the-art resources, we have successfully established ourselves as a trusted partner in educational excellence across various sectors.</p>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-globe mr-2"></i>
-                    ascendinitiatives.in
+                <div class="about-image fade-in">
+                    🚀
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">🎓</div>
+                    <h3>Training Programs</h3>
+                    <p>Comprehensive training in schools for both students and teachers in Robotics, AI, Handwriting, and Calligraphy</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">💻</div>
+                    <h3>Online & Offline Classes</h3>
+                    <p>Flexible learning options including online classes and offline holiday camps with summer programs</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🔬</div>
+                    <h3>Lab Setup Services</h3>
+                    <p>Complete robotic and art lab setup in schools with equipment supply and maintenance</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🏆</div>
+                    <h3>Competitions & Workshops</h3>
+                    <p>Organizing robotics competitions, handwriting contests, and one-day educational workshops</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">📜</div>
+                    <h3>Certification Programs</h3>
+                    <p>Professional certificates in Robotics, Calligraphy, and Cartooning with industry recognition</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🤝</div>
+                    <h3>Consultancy Services</h3>
+                    <p>Expert consultancy, trained teacher placement, and institutional collaboration services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item fade-in">
+                    <h4>🤖 Robotics</h4>
+                    <p>Advanced robotics training, kit supply, and lab setup solutions</p>
+                </div>
+                <div class="expertise-item fade-in">
+                    <h4>🧠 Artificial Intelligence</h4>
+                    <p>Cutting-edge AI education and practical implementation training</p>
+                </div>
+                <div class="expertise-item fade-in">
+                    <h4>🔒 Cyber Security</h4>
+                    <p>Ethical hacking and comprehensive cybersecurity education programs</p>
+                </div>
+                <div class="expertise-item fade-in">
+                    <h4>🚁 Drone Technology</h4>
+                    <p>UAV technology training and practical drone operation courses</p>
+                </div>
+                <div class="expertise-item fade-in">
+                    <h4>✍️ Handwriting Arts</h4>
+                    <p>Italic, Lucida, Cursive styles with professional calligraphy training</p>
+                </div>
+                <div class="expertise-item fade-in">
+                    <h4>🎨 Creative Arts</h4>
+                    <p>Cartooning, artistic expression, and creative skill development</p>
+                </div>
+                <div class="expertise-item fade-in">
+                    <h4>🧪 Chemistry Formulas</h4>
+                    <p>Specialized training in chemical equation writing and formula design</p>
+                </div>
+                <div class="expertise-item fade-in">
+                    <h4>💼 Corporate Training</h4>
+                    <p>Personality development and motivational classes for employees</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="team-avatar">👨‍💻</div>
+                    <h4>Technical Team</h4>
+                    <p>Expert robotics and AI specialists with years of industry experience</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-avatar">👩‍🎨</div>
+                    <h4>Creative Team</h4>
+                    <p>Professional calligraphers and artists dedicated to creative education</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-avatar">👨‍🏫</div>
+                    <h4>Training Team</h4>
+                    <p>Certified educators specializing in technology and arts integration</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-avatar">🤝</div>
+                    <h4>Consultancy Team</h4>
+                    <p>Strategic advisors helping institutions achieve educational excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose Us</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">⭐</div>
+                    <h3>Excellence in Education</h3>
+                    <p>Proven track record of delivering high-quality educational programs with measurable results</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🎯</div>
+                    <h3>Customized Solutions</h3>
+                    <p>Tailored programs designed to meet the specific needs of each institution and student group</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🌟</div>
+                    <h3>Expert Faculty</h3>
+                    <p>Highly qualified and experienced trainers with industry expertise and teaching excellence</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">📈</div>
+                    <h3>Comprehensive Support</h3>
+                    <p>End-to-end service from training to certification, equipment supply to ongoing support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Mission</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p><strong>To revolutionize education by integrating cutting-edge technology with creative arts, empowering students and educators to excel in the digital age.</strong></p>
+                    <br>
+                    <p>We are committed to:</p>
+                    <ul style="margin-left: 2rem; margin-top: 1rem;">
+                        <li>Providing world-class education in emerging technologies</li>
+                        <li>Fostering creativity through traditional and modern art forms</li>
+                        <li>Building partnerships that enhance educational outcomes</li>
+                        <li>Supporting institutions in their digital transformation journey</li>
+                        <li>Creating opportunities for students to develop future-ready skills</li>
+                    </ul>
+                </div>
+                <div class="about-image fade-in">
+                    🎯
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            ascendinitiatives@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +91 6300231865/6305519510
+
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Address</strong><br>
+                            Hyderabad, Telangana, India
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🤝</div>
+                        <div>
+                            <strong>Partnerships</strong><br>
+                            Collaborations with Companies, Institutions, NGOs
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <strong>Career Opportunities</strong><br>
+                            Apply for Jobs & Collaborations
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="#about">About Us</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="#expertise">Expertise</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <p><a href="#services">Training Programs</a></p>
+                    <p><a href="#services">Lab Setup</a></p>
+                    <p><a href="#services">Competitions</a></p>
+                    <p><a href="#services">Consultancy</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Partnerships</h4>
+                    <p>NGO Collaborations</p>
+                    <p>Corporate Training</p>
+                    <p>Educational Institutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>HNO – 8-3-337, 
+yellareddyguda, Ameerpet, 500073, Hyderabad, Telangana</p>
+                    <p>ascendinitiatives@gmail.com</p>
+                    <p>Apply for Jobs & Collaborations</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #333; padding-top: 2rem; margin-top: 2rem;">
+                <p>&copy; 2025 Ascend Initiatives. All rights reserved. | Empowering Education Through Innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
