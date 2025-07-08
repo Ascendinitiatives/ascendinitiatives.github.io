@@ -410,3 +410,49 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+.social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-media h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+}
+
+/* YouTube styling */
+.social-link.youtube {
+    color: #FF0000;
+}
+
+/* Instagram styling */
+.social-link.instagram {
+    color: #E1306C;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
